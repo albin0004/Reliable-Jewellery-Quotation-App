@@ -472,6 +472,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 7. Capture (Seamless)
             const container = document.getElementById('share-export-container');
+            const hideMarginToggle = document.getElementById('hide-margin-toggle');
+
+            if (hideMarginToggle && hideMarginToggle.checked) {
+                container.classList.add('hide-margin');
+            } else {
+                container.classList.remove('hide-margin');
+            }
 
             const canvas = await html2canvas(container, {
                 scale: 3, // Increased scale for HD (approx 2400px width)

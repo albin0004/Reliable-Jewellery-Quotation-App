@@ -926,3 +926,26 @@ tr.total-row td {
     text-transform: uppercase;
     /* Uppercase for attention */
 }
+
+/* Hidden Margin State */
+.classic-share-container.hide-margin .classic-margin-col {
+    display: none !important;
+}
+
+.classic-share-container.hide-margin .classic-photo-col {
+    flex: 1 1 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.classic-share-container.hide-margin .classic-photo-col img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+}
+
+.classic-share-container.hide-margin .ref-display-text {
+    margin-top: 15px;
+}
